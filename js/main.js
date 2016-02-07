@@ -7,7 +7,7 @@ $(document).ready(function() {
     
     
     //Create map and set home location
-    var map = L.map('map-container').setView([46.852, -121.760], 10);
+    var map = L.map('map-container').setView([46.8430, -121.6700], 11);
     
 	var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
