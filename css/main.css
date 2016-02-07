@@ -6,7 +6,10 @@
 
 }
 
-#jumbotron-carousel .item img{ width:100%; height:600px; } 
+#jumbotron-carousel .item img { 
+    width:100%; 
+    height:600px; 
+} 
 
 #map {
     margin-top: 40px;
@@ -52,7 +55,7 @@
 }
 
 #stats dt:before {
-    content: url("img/tree_icon.png");
+    content: url("/img/tree_icon.png");
     vertical-align: -3px;
     padding: 0 5px 0 0;
 }
