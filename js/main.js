@@ -82,7 +82,7 @@ $(document).ready(function() {
     // Navbar dropdown menu fix (opens tabs from navbar)
     //+++++++++++++++++++++++++++++++++++++++++++++++++++
     
-    var tabs$ = $("#tabs a");
+/*    var tabs$ = $("#tabs a");
 
     $(window).on("hashchange", function() {
         var hash = window.location.hash, // Get current hash
@@ -91,6 +91,7 @@ $(document).ready(function() {
         menu_item$.tab("show"); // Call bootstrap to show the tab
         }).trigger("hashchange");
     
+ */
     
 });
 
