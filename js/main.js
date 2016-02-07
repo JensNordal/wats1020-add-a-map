@@ -65,17 +65,20 @@ $(document).ready(function() {
         [46.7896897,-121.735622],
         ]).addTo(map);
         polygon.bindPopup('<b>Paradise, WA - Inn and Natural Area</b><br><a href="https://en.wikipedia.org/wiki/Paradise,_Washington")>Learn More</a>');
-     
-    var popup = L.popup();
+        
+	
+	//Listen for clicks on map and return lat/long in popup 
+	var popup = L.popup();
 
-    
-    //Listen for clicks on map and return lat/long in popup
-    function onMapClick(e) {
-        popup
-            .setLatLng(e.latlng)
-            .setContent("You clicked the map at " + e.latlng.toString())
-            .openOn(map);
-    }
+	function onMapClick(e) {
+    	popup
+        	.setLatLng(e.latlng)
+        	.setContent("You clicked the map at " + e.latlng.toString())
+        	.openOn(map);
+	}
+
+	map.on('click', onMapClick);
+	
      
     
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -91,7 +94,7 @@ $(document).ready(function() {
    	 		}, 800);
 	});	
 
-
+	
 });
 
 
