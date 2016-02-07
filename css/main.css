@@ -55,7 +55,7 @@
 }
 
 #stats dt:before {
-    content: url("/img/tree_icon.png");
+    content: url("img/tree_icon.png");
     vertical-align: -3px;
     padding: 0 5px 0 0;
 }
@@ -63,6 +63,7 @@
 #links {
     margin-top: 40px;
 }
+
 
 
 
