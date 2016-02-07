@@ -30,7 +30,7 @@ $(document).ready(function() {
         "Satellite": satLayer,
         "Map View": drawLayer,
         "Open Street Maps": osm
-}
+};
 
     L.control.layers(mapLayers).addTo(map);
         satLayer.addTo(map);
@@ -83,12 +83,12 @@ $(document).ready(function() {
     //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	$('a.js-link-scroll').on('shown.bs.tab', function (e) {
-   	$('#tabs .active').removeClass('active');
-   	$('a[href="'+$(this).attr('href')+'"]').parent().addClass('active');
-   	 	var that = this;
-   	 	$('html, body').animate({
-   	     scrollTop: $( $(that).attr('href') ).offset().top
-   	 }, 800);
+   		$('#tabs .active').removeClass('active');
+   		$('a[href="'+$(this).attr('href')+'"]').parent().addClass('active');
+   	 		var that = this;
+   	 		$('html, body').animate({
+   	     	scrollTop: $( $(that).attr('href') ).offset().top
+   	 		}, 800);
 	});	
 
     
