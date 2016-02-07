@@ -2,7 +2,7 @@
 // WATS1020 - Add a Map Assignment
 //+++++++++++++++++++++++++++++++++++++++++++++++++++
 
-    //Set script to run after document load
+//Set script to run after document load
 $(document).ready(function() {
     
     
@@ -78,20 +78,19 @@ $(document).ready(function() {
     }
      
     
-    //+++++++++++++++++++++++++++++++++++++++++++++++++++
-    // Navbar dropdown menu fix (opens tabs from navbar)
-    //+++++++++++++++++++++++++++++++++++++++++++++++++++
-    
-    var tabs$ = $("#tabs a");
-
-    $(window).on("hashchange", function() {
-        var hash = window.location.hash, // Get current hash
-            menu_item$ = tabs$.filter("[href=" + hash + "]"); // Get the menu element
-
-        menu_item$.tab("show"); // Call bootstrap to show the tab
-        }).trigger("hashchange");
-    
+    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // Navbar dropdown menu fix (opens tabs from navbar - adds smooth scroll)
+    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	
+	$('a.js-link-scroll').on('shown.bs.tab', function (e) {
+   	$('#tabs .active').removeClass('active');
+   	$('a[href="'+$(this).attr('href')+'"]').parent().addClass('active');
+   	 	var that = this;
+   	 	$('html, body').animate({
+   	     scrollTop: $( $(that).attr('href') ).offset().top
+   	 }, 800);
+	});	
+
     
 });
 
