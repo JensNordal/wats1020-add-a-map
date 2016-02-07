@@ -2,8 +2,64 @@
    Author's custom styles
    ========================================================================== */
 
-#map-container { height: 180px; }
+.body {
 
+}
+
+#jumbotron-carousel .item img{ width:100%; height:600px; } 
+
+#map {
+    margin-top: 40px;
+}
+
+#map-container { 
+    height: 260px;
+}
+
+#tabs {
+    padding-top: 25px;
+}
+
+#about {
+    padding: 1px 25px 25px 25px;
+    margin: 25px 0 10px 0;
+    border-radius: 1rem;
+    background-color: #F8F5F0;
+}
+
+#history {
+    padding: 1px 25px 25px 25px;
+    margin: 25px 0 10px 0;
+    border-radius: 1rem;
+    background-color: #F8F5F0;
+}
+
+#stats {
+    padding: 1px 25px 25px 25px;
+    margin: 25px 0 10px 0;
+    border-radius: 1rem;
+    background-color: #F8F5F0;
+}
+
+#stats dd{
+    padding-left: 35px;
+}
+
+#stats dt {
+    font-size: 16px;
+    line-height: 150%;
+    padding-top: 14px;
+}
+
+#stats dt:before {
+    content: url("/img/tree_icon.png");
+    vertical-align: -3px;
+    padding: 0 5px 0 0;
+}
+
+#links {
+    margin-top: 40px;
+}
 
 
 
