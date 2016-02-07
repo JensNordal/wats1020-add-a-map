@@ -7,7 +7,7 @@ $(document).ready(function() {
     
     
     //Create map and set home location
-    var map = L.map('map-container').setView([46.852, -121.760], 10);
+    var map = L.map('map-container').setView([46.843, -121.670], 11);
     
 	var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
     var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
@@ -38,7 +38,7 @@ $(document).ready(function() {
 
     //Add markers, circle, and polygon to identify key areas on map
     var marker = L.marker([46.852, -121.760]).addTo(map);
-        marker.bindPopup('<b>Welcome to Mt. Rainier!</b><br>This peak is 14,392 feet (4,386 m) high.<br><a href="http://www.nps.gov/mora/index.htm">Learn More</a>');
+        marker.bindPopup('<b>Welcome to Mt. Rainier!</b><br>This peak is 14,417 feet (4,394 m) high.<br><a href="http://www.nps.gov/mora/index.htm">Learn More</a>');
     
     var marker = L.marker([46.8244992,-121.7623382]).addTo(map);
         marker.bindPopup('<b>Liberty Cap Glacier</b><br>Elevation: 14,100 feet (4,300 m)<br><a href="https://en.wikipedia.org/wiki/Liberty_Cap_Glacier">Learn More</a>');
@@ -81,9 +81,9 @@ $(document).ready(function() {
 	
      
     
-    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     // Navbar dropdown menu fix (opens tabs from navbar - adds smooth scroll)
-    //+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    //++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	
 	$('a.js-link-scroll').on('shown.bs.tab', function (e) {
    		$('#tabs .active').removeClass('active');

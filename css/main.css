@@ -16,11 +16,11 @@
 }
 
 #map-container { 
-    height: 260px;
+    height: 280px;
 }
 
 #tabs {
-    padding-top: 25px;
+    margin-top: 35px;
 }
 
 #about {
@@ -63,6 +63,8 @@
 #links {
     margin-top: 40px;
 }
+
+
 
 
 
