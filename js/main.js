@@ -78,7 +78,7 @@ $(document).ready(function() {
     }
      
     
-    //+++++++++++++++++++++++++++++++++++++++++++++++++++
+/*    //+++++++++++++++++++++++++++++++++++++++++++++++++++
     // Navbar dropdown menu fix (opens tabs from navbar)
     //+++++++++++++++++++++++++++++++++++++++++++++++++++
     
@@ -91,7 +91,8 @@ $(document).ready(function() {
         menu_item$.tab("show"); // Call bootstrap to show the tab
         }).trigger("hashchange");
     
- 
+ */
+	
     
 });
 
